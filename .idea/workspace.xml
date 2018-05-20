@@ -4,8 +4,6 @@
     <list default="true" id="476dbd1e-122f-4715-b3b4-4227bd2377e7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/controllers/post.controller.js" afterPath="$PROJECT_DIR$/controllers/post.controller.js" />
-      <change beforePath="$PROJECT_DIR$/models/post.model.js" afterPath="$PROJECT_DIR$/models/post.model.js" />
-      <change beforePath="$PROJECT_DIR$/services/post.service.js" afterPath="$PROJECT_DIR$/services/post.service.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,8 +37,8 @@
       <file leaf-file-name="post.controller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/post.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="54" lean-forward="false" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+            <state relative-caret-position="476">
+              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -49,8 +47,8 @@
       <file leaf-file-name="post.service.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/post.service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-153">
-              <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+            <state relative-caret-position="187">
+              <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="32" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -344,7 +342,7 @@
       <updated>1526505288774</updated>
       <workItem from="1526505290396" duration="4722000" />
       <workItem from="1526547254547" duration="1569000" />
-      <workItem from="1526750181459" duration="4195000" />
+      <workItem from="1526750181459" duration="4435000" />
     </task>
     <task id="LOCAL-00001" summary="added date to post model &amp; post service">
       <created>1526819550394</created>
@@ -353,11 +351,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526819550394</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added post controller">
+      <created>1526821713454</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1526821713454</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10486000" />
+    <option name="totallyTimeSpent" value="10726000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
@@ -400,7 +405,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added date to post model &amp; post service" />
-    <option name="LAST_COMMIT_MESSAGE" value="added date to post model &amp; post service" />
+    <MESSAGE value="added post controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="added post controller" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -601,16 +607,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/services/post.service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+        <state relative-caret-position="187">
+          <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="32" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/post.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="54" lean-forward="false" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+        <state relative-caret-position="476">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
         </state>
       </provider>

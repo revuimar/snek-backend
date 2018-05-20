@@ -14,17 +14,20 @@ exports.getPosts = async function(req,res,next){
     }
 }
 
-exports.createTodo = async function(req, res, next){
+exports.createPost = async function(req, res, next){
     // Req.Body contains the form submit values.
-    var todo = {
+    var post = {
         title: req.body.title,
-        description: req.body.description,
-        status: req.body.status
+        body: req.body.body,
+        solved: req.body.solved,
+        votes: req.body.votes,
+        tags: req.body.tags,
+        comments: req.body.comments
     };
 
     try{
-        var createdTodo = await TodoService.createTodo(todo);
-        return res.status(201).json({status: 201, data: createdTodo, message: "Succesfully Created ToDo"});
+        var createdPost = await PostService.createPost(post);
+        return res.status(201).json({status: 201, data: createdPost, message: "Succesfully Created Post"});
     }catch(e){
         return res.status(400).json({status: 400, message: "Todo Creation was Unsuccesfull"});
     }
