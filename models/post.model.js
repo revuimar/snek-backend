@@ -10,11 +10,10 @@ var PostSchema = new mongoose.Schema({
     body: String,
     date: Date,
     solved: Boolean,
-    id: Number,
     votes: Number,
     tags: String,
     comments: String,
-    author: User//Schema.ObjectId????
+    //author: User//Schema.ObjectId????
 });
 
 PostSchema.plugin(mongoosePaginate);

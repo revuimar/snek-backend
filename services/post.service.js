@@ -31,7 +31,7 @@ exports.createPost = async function(post){
         votes: post.votes,
         tags: post.tags,
         comments: post.comments,
-        author: post.author
+        //author: post.author
     });
 
     try{
