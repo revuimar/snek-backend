@@ -8,6 +8,7 @@ var mongoosePaginate = require('mongoose-paginate');
 var PostSchema = new mongoose.Schema({
     title: String,
     body: String,
+    date: Date,
     solved: Boolean,
     id: Number,
     votes: Number,
