@@ -5,7 +5,8 @@ _this = this;
 exports.getPosts = async function(req,res,next){
     //option = queryparameter ? queryparameter : defaultvalue;
     var page = req.query.page ? req.query.page : 1;
-    var limit = req.query.limit ? req.query.limit : 5;
+    var limit = req.query.limit ? req.query.limit : 10;
+
     try{
         var posts = await PostService.getPosts({}, page, limit);
         return res.status(200).json({status: 200, data: posts, message: "Succesfully Posts Recieved"});
@@ -18,7 +19,7 @@ exports.createPost = async function(req, res, next){
     // Req.Body contains the form submit values.
     var post = {
         title: req.body.title,
-        body: req.body.body,
+        description: req.body.description,
         solved: req.body.solved,
         votes: req.body.votes,
         tags: req.body.tags,
@@ -29,7 +30,7 @@ exports.createPost = async function(req, res, next){
         var createdPost = await PostService.createPost(post);
         return res.status(201).json({status: 201, data: createdPost, message: "Succesfully Created Post"});
     }catch(e){
-        return res.status(400).json({status: 400, message: "Todo Creation was Unsuccesfull"});
+        return res.status(400).json({status: 400, message: "Post Creation was Unsuccesfull"});
     }
 }
 
@@ -42,7 +43,7 @@ exports.updatePost = async function(req, res, next){
     var post = {
         id,
         title: req.body.title ? req.body.title : null,
-        body: req.body.body ? req.body.body : null,
+        description: req.body.description ? req.body.description : null,
         solved: req.body.solved ? req.body.solved : null,
         votes: req.body.votes ? req.body.votes : null,
         tags: req.body.tags ? req.body.tags : null,

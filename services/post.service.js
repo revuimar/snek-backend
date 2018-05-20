@@ -25,7 +25,7 @@ exports.createPost = async function(post){
     // Creating a new Mongoose Object by using the new keyword
     var newPost = new Post({
         title: post.title,
-        body: post.body,
+        description: post.description,
         date: new Date(),
         solved: post.solved,
         votes: post.votes,
@@ -59,7 +59,7 @@ exports.updatePost = async function(post){
 
     //Edit the Post Object
     oldPost.title = post.title;
-    oldPost.body = post.body;
+    oldPost.description = post.description;
     oldPost.solved = post.solved;
     oldPost.votes = post.votes;
     oldPost.tags = post.tags;

@@ -1,13 +1,12 @@
-import * as Schema from "mongoose";
 
-var User = require('user.model');
+//var User = require('user.model');
 var mongoose = require('mongoose');
 var mongoosePaginate = require('mongoose-paginate');
 
 
 var PostSchema = new mongoose.Schema({
     title: String,
-    body: String,
+    description: String,
     date: Date,
     solved: Boolean,
     votes: Number,
