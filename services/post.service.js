@@ -73,7 +73,7 @@ exports.updatePost = async function(post){
     }catch(e){
         throw Error("And Error occured while updating the Post");
     }
-}
+};
 
 exports.deletePost = async function(id){
     try{

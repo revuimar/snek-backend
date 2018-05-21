@@ -8,11 +8,14 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var api = require('./routes/api/api.route');
+var cors = require('cors');
 var app = express();
+
+app.use(cors());
 
 var mongoose = require('mongoose');
 mongoose.Promise = bluebird;
-mongoose.connect('mongodb://127.0.0.1:27017/snek', { useMongoClient: true})
+mongoose.connect('mongodb://127.0.0.1:27017/snek',)
         .then(()=> { console.log(`Succesfully Connected to the
                      Mongodb Database  at URL : mongodb://127.0.0.1:27017/snek`)})
         .catch(()=> { console.log(`Error Connecting to the Mongodb 
@@ -27,6 +30,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
