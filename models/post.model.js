@@ -10,8 +10,8 @@ var PostSchema = new mongoose.Schema({
     date: Date,
     solved: Boolean,
     votes: Number,
-    tags: String,
-    comments: String,
+    tags: [String],
+    comments: [String],
     //author: User//Schema.ObjectId????
 });
 

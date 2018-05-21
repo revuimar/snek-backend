@@ -1,16 +1,13 @@
-
-var mongoose = require('mongoose');
-var mongoosePaginate = require('mongoose-paginate');
-
-
+var mongoose = require("mongoose");
+var passportLocalMongoose = require("passport-local-mongoose");
 var UserSchema = new mongoose.Schema({
-    username: String,
+    username:String,
+    password:String,
     email: String,
-    registration_date: Date,
-    avatar: String
+    registration: Date,
+    avatar: String,
+    reputation: Number
 });
 
-UserSchema.plugin(mongoosePaginate);
-const User = mongoose.model('User', UserSchema);
-
-module.exports = User;
+UserSchema.plugin(passportLocalMongoose);
+module.exports = mongoose.model("User",UserSchema);
